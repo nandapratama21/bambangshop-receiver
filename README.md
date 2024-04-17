@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [✓] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [✓] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [✓] Commit: `Create Notification service struct skeleton.`
+    -   [✓] Commit: `Implement subscribe function in Notification service.`
+    -   [✓] Commit: `Implement subscribe function in Notification controller.`
+    -   [✓] Commit: `Implement unsubscribe function in Notification service.`
+    -   [✓] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [✓] Commit: `Implement receive_notification function in Notification service.`
+    -   [✓] Commit: `Implement receive function in Notification controller.`
+    -   [✓] Commit: `Implement list_messages function in Notification service.`
+    -   [✓] Commit: `Implement list function in Notification controller.`
+    -   [✓] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -97,3 +97,16 @@ Answer: Rust does not allow us to mutate the static variable directly because Ru
 lazy_static makes a single variable only exist once in the program, and it is safe to use in a multithreaded environment.
 
 #### Reflection Subscriber-2
+
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+Answer: I little explored lib.rs file. I learned that lib.res contains information about the crate, and it is the entry point of the crate.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+Answer: Yes, adding obsever pattern easier to add because we can add more subscribers by adding more instances of the receiver. If we instantiate more than one instance of the main app, 
+it will still be easy enough to add to the system because we can add more instances of the receiver to subscribe to the main app.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+
+Answer: Yes, I think it is useful because we can know the functionality of the API that we have created. We can also test the API to see if it works as expected.
